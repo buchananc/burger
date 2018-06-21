@@ -1,0 +1,26 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "a restaurant app that lets users input the names of burgers they'd like to eat using a database to store burger names.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buchananc/burger.git"
+  },
+  "author": "Candace Buchanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buchananc/burger/issues"
+  },
+  "homepage": "https://github.com/buchananc/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
+  }
+}
