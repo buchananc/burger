@@ -8,9 +8,7 @@
 -- burger_name: a string.
 -- devoured: a boolean.
 
-###
-Schema
-DROP DATABASE if EXISTS
+### Schema
 CREATE DATABASE burgers_db;
 USE burgers_db;
 
