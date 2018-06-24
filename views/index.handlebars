@@ -1,24 +1,49 @@
-
-<h1>Eat-Da-Burger Now!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 center">
+            <h1>
+                <center>Eat-Da-Burger Now!</center>
+            </h1>
+            <center>
+                <img src="/assets/img/burgerClipArt.png" class="burgerImg">
+            </center>
+        </div>
+    </div>
+</div>
 <br>
 
-<section class="row">
-    <div class="col-md-7 col-left">
-        <table>
-            {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block}} {{/unless}} {{/each}}
-        </table>
-    </div>
-    <div class="col-md-5 col-right">
-        {{#each burgers}} {{#if devoured}}
-        <div>{{id}}. {{burger_name}}</div>
-        {{/if}} {{/each}}
-    </div>
-</section>
+<div class="container">
+    <section class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-4 burgerTable">
+            <h2>
+                <center>Burgers to Eat:</center>
+            </h2>
+            <table>
+                {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block}} {{/unless}} {{/each}}
+            </table>
+        </div>
+        <div class="col-sm-4 burgerTable">
+            <h2>
+                <center>Burgers Devoured:</center>
+            </h2>
+            <div class="eatenBurgers">
+                {{#each burgers}} {{#if devoured}}
+                <div>{{id}}. {{burger_name}}</div>
+                {{/if}} {{/each}}
+            </div>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </section>
+</div>
 
 <form class="create-form">
     <div class="form-group">
         <label for="name"></label>
-        <textarea id="name" name="burger-name" rows="2" cols="40" placeholder="What do you want to eat?"></textarea>
+        <textarea id="name" name="burger-name" rows="2" cols="50" placeholder="What burger are you craving?"></textarea>
     </div>
-    <button type="submit">Add Burger</button>
+    <button class="addBtn hvr-grow" type="submit">Add Burger</button>
 </form>
