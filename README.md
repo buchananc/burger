@@ -10,3 +10,17 @@ Whenever a user submits a burger's name, the app will display the burger on the 
 
 The app will store every burger in a database, whether devoured or not.
 ![screen shot 2018-06-24 at 2 28 20 am](https://user-images.githubusercontent.com/35079979/41816556-4c448834-7756-11e8-9736-c5ce9da2275d.png)
+
+## Dependencies
+Body-Parser, Express, Express-Handlebars, Hover.css, Method-Override, MySql are all dependencies in the [package.json](https://github.com/buchananc/burger/blob/master/package.json), so all you'll need to do is run:
+
+```npm install```
+
+## Start
+Clone this repository.
+
+Run this module in the terminal:
+
+```node server.js```
+
+Then proceed to http://localhost:8080/ to start devouring some yummy burgers!
