@@ -11,5 +11,9 @@ CREATE TABLE burgers
 	PRIMARY KEY(id)
 );
 
+-- seeds go here
+
+
+
 SELECT *
 FROM burgers_db.burgers;

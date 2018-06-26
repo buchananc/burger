@@ -4,6 +4,7 @@
   "description": "a restaurant app that lets users input the names of burgers they'd like to eat using a database to store burger names.",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
